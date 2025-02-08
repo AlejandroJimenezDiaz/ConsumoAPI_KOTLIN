@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="imagen_personaje">imagen_responaje\n</string>
+    <string name="especie">Especie :</string>
+    <string name="sexo">sexo :</string>
+</resources>

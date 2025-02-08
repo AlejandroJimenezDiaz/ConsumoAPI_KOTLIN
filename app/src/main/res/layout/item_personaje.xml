@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Imagen del personaje -->
+        <ImageView
+            android:id="@+id/ivPersonaje"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/imagen_personaje" />
+
+        <!-- Características en dos filas y dos columnas -->
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Nombre:"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceTitleLarge"
+            app:layout_constraintBottom_toTopOf="@+id/tvEspecie"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivPersonaje"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvEspecie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:text="Especie:"
+            android:textAppearance="?attr/textAppearanceBody2"
+            app:layout_constraintBottom_toTopOf="@id/tvOrigin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/tvOrigin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Origen:"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceBody2"
+            app:layout_constraintTop_toBottomOf="@id/tvEspecie"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
